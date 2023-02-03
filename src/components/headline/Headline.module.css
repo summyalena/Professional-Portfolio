@@ -1,0 +1,28 @@
+.container {
+  background-color: var(--background-color);
+   overflow: hidden;
+   position: relative;
+   width: 100vw;
+   color: var(--main-color);
+   height: 90vh; 
+   display: flex;
+}
+
+.socialLinks {
+    position: fixed;
+    bottom: 0;
+}
+
+.socialLinks ul li {
+    list-style: none;
+
+}
+
+
+.writeup {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Playfair', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+}

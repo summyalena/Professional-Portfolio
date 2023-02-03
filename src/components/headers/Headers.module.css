@@ -1,0 +1,27 @@
+.mainContainer {
+    background-color: #101820FF;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    height: 10vh;
+    width: 100vw;
+}
+
+.mainContainer .heading:hover {
+  color: rgba(253, 235, 76, 0.87);
+  animation: ease-in 10s linear;
+  background-color: rgba(51, 54, 58, 0.726);
+  border-radius: 1.5em;
+}
+
+.mainContainer .link {
+    color: var(--main-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+
+@media screen  {
+    
+}
