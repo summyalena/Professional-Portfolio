@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+    background-color: var(--background-color);
+    padding:1px 4px 4px 1px;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.overall {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.writeup{
+    color: var(--main-color);
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.write {
+   width: 50%;
+   height: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.images {
+    color: var(--main-color);
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageBox {
+   width: 40%;
+   height: 30%;
+   background-color: white;
+   position: relative;
+}
+
+.imageBoxx {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    background-color: #fee715;
+}
