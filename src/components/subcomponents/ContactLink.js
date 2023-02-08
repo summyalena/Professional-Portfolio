@@ -1,10 +1,29 @@
 import React from 'react'
+import styled from 'styled-components'
+import { NavLink } from 'react-router-dom'
 
+const Contact = styled.div`
+    position: absolute;
+    top: 90%;
+    left: 35%;
+    display: flex;
+`
+
+const NavContact = styled(NavLink)`
+   text-decoration: none;
+   color: var(--main-color);
+
+   &:hover, &:focus {
+     color: rgba(200, 222, 222, 0.5);
+   }
+`
 const ContactLink = () => {
   return (
-    <div>
+    <Contact>
+        <NavContact to='/Contact'>
        Contact 
-        </div>
+       </NavContact>
+        </Contact>
   )
 }
 
