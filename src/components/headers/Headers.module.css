@@ -4,7 +4,7 @@
     justify-content: space-around;
     display: flex;
     height: 10vh;
-    width: 100vw;
+    width: 100%;
 }
 
 .mainContainer .heading:hover {

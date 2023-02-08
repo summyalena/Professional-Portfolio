@@ -1,0 +1,46 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-color);
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.3rem;
+}
+
+.box {
+    background-color: #f7ec8baf;
+    width: 200px;
+    display: flex;
+    border-top-right-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    flex-direction: column;
+    padding: 8px;
+}
+
+.title {
+   padding: 0 0 5px 0;
+}
+
+.underline {
+    width: 100%;
+    height: 2px;
+    display: flex;
+    background-color: black;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
