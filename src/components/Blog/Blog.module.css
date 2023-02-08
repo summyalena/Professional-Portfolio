@@ -1,0 +1,49 @@
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Box {
+    width: 80%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.miniBox {
+   width: 250px;
+   height: 250px;
+   border-radius: 0.2rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: var(--main-color);
+   font-family: 'Playfair Display', sans-serif ;
+   border: 0.7px solid var(--main-color);
+}
+
+.miniBox:hover {
+    background-color: var(--main-color);
+    border: 0.6px solid var(--background-color);
+    cursor: pointer;
+    animation: 0.02s ease-in;
+    color: var(--background-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+.text {
+    padding: 1rem;
+}
