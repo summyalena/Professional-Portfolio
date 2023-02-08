@@ -4,13 +4,19 @@ import SocialLinks from '../subcomponents/socialLinks';
 import Writeup from '../subcomponents/writeup';
 import ContactLink from '../subcomponents/ContactLink';
 import BlogLink from '../subcomponents/BlogLink';
+import ProjectsLink from '../subcomponents/ProjectsLink';
+import AboutLink from '../subcomponents/AboutLink';
+
 
 function Headline() {
   return (
     <div className={styles.container}>
         <SocialLinks/>
+        <AboutLink/>
         <Writeup/>
         <BlogLink/>
+        <ContactLink/>
+        <ProjectsLink/>
     </div>
   )
 }

@@ -5,9 +5,10 @@ import Logo from '../subcomponents/logo';
 import Home from '../subcomponents/home';
 
 function Headers() {
+
   return (
     <div className={styles.mainContainer}>
-     <NavLink exact to='/'>
+     <NavLink className={styles.link} exact to='/'>
       <Logo/>
      </NavLink>
      <NavLink className={styles.link} exact to='/'>
