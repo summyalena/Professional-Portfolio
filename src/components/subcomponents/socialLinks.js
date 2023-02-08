@@ -6,6 +6,7 @@ import BouncingDots from './BouncingDots';
 const Link = styled.div`
    position: fixed;
    bottom: 0;
+   padding: 0 0 2rem 10rem;
    display: flex;
    flex-direction: column;
 `
