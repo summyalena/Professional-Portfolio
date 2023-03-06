@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 const Blog = styled.div`
     position: absolute;
     top: 50%;
-    right: 0%;
+    right: 2%;
     transform: rotate(90deg) translate(-50%, -50%);
 `
 

@@ -1,10 +1,42 @@
 import React from 'react'
 import styled from 'styled-components';
+import ContactLink from '../subcomponents/ContactLink';
+import AboutLink from '../subcomponents/AboutLink';
+import { NavLink } from 'react-router-dom';
 
+
+const BlogNLink = styled.div`
+   position: absolute;
+   top: 50%;
+   right: 1%;
+   transform: rotate(90deg) translate(-50%, -50%);
+   color: var(--background-color);
+`
+
+const NavBlog = styled(NavLink)`
+  text-decoration: none;
+  color: var(--background-color);
+
+  &:active, &:hover {
+     color: var(--background-color);
+  }
+`
+
+const ProjectsNLink = styled.div`
+  position: absolute;
+  top: 90%;
+  left: 70%;
+  right: 0%;
+  color: var(--background-color);
+`
+const NavProject = styled(NavLink)`
+    text-decoration: none;
+    color: var(background-color);
+`
 
 const Container = styled.div`
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     overflow: hidden;
     display: flex;
 `
@@ -53,6 +85,7 @@ const MainHeadline = () => {
   return (
    <Container>
       <Wrapper>
+        <AboutLink/>
       <Writeup>
         <Write>
         I am Assumpta Okolike. I am a software developer and I can help build projects proferring solutions to your issues.
@@ -63,6 +96,17 @@ const MainHeadline = () => {
 
         </ImageBox>
       </Image>
+      <BlogNLink>
+        <NavBlog exact to='/Blog'>
+            Blog
+        </NavBlog>
+        </BlogNLink>
+      <ContactLink/>
+      <ProjectsNLink>
+        <NavProject exact to='/Projects'>
+        Projects
+        </NavProject>
+        </ProjectsNLink>
       </Wrapper>
    </Container>
   )

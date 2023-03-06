@@ -6,15 +6,17 @@ import Headers from '../headers/headers';
 import MainHeadline from './mainHeadline';
 import Projects from '../Projects/Projects';
 import Blog from '../Blog/Blog';
+import SocialLinks from '../subcomponents/socialLinks'
 
 
-const Main = () => {
+const Main = ({click}) => {
   return (
     <>
     <Headers/>
     <div className={styles.container}>
         <div className={styles.wrapper}>
     <MainHeadline/>
+    <SocialLinks/>
      <AboutPage/>
      <Projects/>
      <Blog/>

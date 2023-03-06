@@ -21,7 +21,6 @@ const Logo = () => {
       font-weight: 300;
       text-decoration: none;
       display: flex;
-      
     `
   return (
     <Container>

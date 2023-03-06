@@ -6,7 +6,7 @@ const AboutLink = () => {
     const About = styled.div`
     position: absolute;
     top: 50%;
-    left: 15%;
+    left: 4%;
     text-decoration: none;
     transform: rotate(-90deg) translate(-50%, -50%);
 `

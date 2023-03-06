@@ -8,13 +8,13 @@ function Headers() {
 
   return (
     <div className={styles.mainContainer}>
-     <NavLink className={styles.link} exact to='/'>
+      <NavLink className={styles.link} exact to='/'>
       <Logo/>
      </NavLink>
      <NavLink className={styles.link} exact to='/'>
      <Home/>
      </NavLink>
-     <NavLink className={styles.link} exact to='/'>Say hi!</NavLink>
+     <NavLink className={styles.link} exact to='/Contact'>Say hi!</NavLink>
     </div>
   )
 }

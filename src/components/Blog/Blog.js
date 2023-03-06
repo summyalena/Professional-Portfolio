@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import styles from './Blog.module.css'
+import medium from '../../images/medium printout.JPG'
 
 const Header = styled.div`
  display: flex;
@@ -10,6 +11,14 @@ const Header = styled.div`
   font-family: 'Pacifico';
   color: var(--main-color);
 `
+
+const Button = styled.button`
+    background-color: var(--main-color);
+    padding: 0.5rem 1.2rem;
+    border-radius: 0.3rem;
+    color: white;
+`
+
 
 const Blog = () => {
   return (
@@ -21,26 +30,26 @@ const Blog = () => {
         <div className={styles.Box}>
           <div className={styles.miniBox}>
              <div className={styles.image}>
-              
+              <img src={medium} alt='medium'/>
              </div>
               <div className={styles.text}>
                 This Blog is an introductory article for anyone new to Vercel and Netlify. This article guides a newbie to successfully deploy a work with no stress
               </div>
-              <button>
+              <Button>
                 Click Me
-              </button>
+              </Button>
           </div>
 
           <div className={styles.miniBox}>
              <div className={styles.image}>
-              
+             <img src={medium} alt='medium'/>
              </div>
               <div className={styles.text}>
                 This Blog is an introductory article for anyone new to Vercel and Netlify. This article guides a newbie to successfully deploy a work with no stress
               </div>
-              <button>
+              <Button>
                 Click Me
-              </button>
+              </Button>
           </div>
           
           </div> 
