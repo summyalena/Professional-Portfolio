@@ -9,7 +9,7 @@ import Blog from '../Blog/Blog';
 import SocialLinks from '../subcomponents/socialLinks'
 
 
-const Main = ({click}) => {
+const Main = () => {
   return (
     <>
     <Headers/>

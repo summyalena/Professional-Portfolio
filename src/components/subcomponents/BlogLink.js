@@ -7,6 +7,9 @@ const Blog = styled.div`
     top: 50%;
     right: 2%;
     transform: rotate(90deg) translate(-50%, -50%);
+    @media (max-width: 768px){
+      display: none;
+    }
 `
 
 const NavBlog = styled(NavLink)`

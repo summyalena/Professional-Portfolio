@@ -7,8 +7,8 @@ const HomeLogo = styled.div`
    border-radius: 100%;
    padding: 4px;
    border: 1px solid;
-   :&hover {
-     
+   @media (max-width: 760px){
+      display:none;
    }
 `
 const Home = () => {

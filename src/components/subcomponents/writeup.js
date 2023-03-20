@@ -1,7 +1,7 @@
-import React, {useState} from 'react'
+import React from 'react'
 import styled, {keyframes} from 'styled-components'
 import TypewriterComponent from 'typewriter-effect'
-
+import { NavLink } from 'react-router-dom'
 
 
 const button = keyframes`
@@ -14,17 +14,24 @@ const button = keyframes`
 `
 
 const Writes = styled.div`
+   position: absolute;
+   top: 50%;
+   bottom: 50%;
    display: flex;
    flex-direction: column;
    justify-content: center;
-   width: ${props => props.clickOn ? '400px' : '0px'};
+   width: 400px;
    align-items: center;
    padding: 0 0 0 35rem;
    font-family: Playfair Display;
    font-size: 2rem;
+
+   &>:first-child{
+     display: ${props => props.click ? "none" : "flex"};
+   }
 `
 
-const Button = styled.button`
+const NavHome = styled(NavLink)`
    color: var(--main-color);
    background: transparent;
    border: none;
@@ -33,15 +40,20 @@ const Button = styled.button`
    font-family: Playfair Display;
    font-size: 1.2rem;
    animation-name: ${button};
+   text-decoration: none;
    animation-duration: 5s;
    animation-iteration-count: infinite;
+
+   &:active {
+    color: var(--background-color);
+   }
 `
 
-const Writeup = ({clickOn, clickOff}) => {
+const Writeup = ({clickOn, click}) => {
 
   return (
     <>
-    <Writes clickOn={clickOn} clickOff={clickOff}>
+    <Writes click={click} >
       <TypewriterComponent 
             options={{
                strings: ["Hello!", "Welcome to my portfolio page!", "Have a nice day! "],
@@ -50,10 +62,11 @@ const Writeup = ({clickOn, clickOff}) => {
                 deleteSpeed: 50,
             }}
     />
-    </Writes>
-    <Button onClick={()=> clickOn()}>
+   
+    <NavHome exact to="/Main">
     Click here to begin!
-   </Button> 
+   </NavHome> 
+   </Writes>
    </>
   )
 }

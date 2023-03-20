@@ -22,7 +22,32 @@
     text-decoration: none;
 }
 
+.SayHi {
+  color: var(--main-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9em;
+  display: inline-block;
+  text-decoration: none;
+}
 
-@media screen  {
-    
+.menu {
+  display: none;
+}
+
+.burger{
+  display: none;
+}
+
+@media (max-width: 760px)  {
+    .SayHi{
+      display: none;
+    }
+
+    .burger {
+      display: flex;
+    }
+
+  .menu {
+    display: inline-block;
+  }
 }

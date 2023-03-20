@@ -9,6 +9,9 @@ const AboutLink = () => {
     left: 4%;
     text-decoration: none;
     transform: rotate(-90deg) translate(-50%, -50%);
+    @media (max-width: 768px){
+      display:none;
+    }
 `
     const NavAbout = styled(NavLink)`
        text-decoration: none;

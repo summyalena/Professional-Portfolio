@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './about.module.css'
 import styled from 'styled-components'
+import BackButton from '../subcomponents/backButton'
 
 const Header = styled.div`
  display: flex;
@@ -9,6 +10,10 @@ const Header = styled.div`
   font-size: 2rem;
   font-family: 'Pacifico';
   color: var(--main-color);
+
+  @media (max-width: 760px){
+    margin: 1rem;
+  }
 `
 const AboutPage = () => {
   return (
@@ -32,6 +37,7 @@ const AboutPage = () => {
         </div>
       </div>
       </div>
+      <BackButton/>
       </div>
   )
 }

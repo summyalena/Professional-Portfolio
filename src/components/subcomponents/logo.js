@@ -4,9 +4,6 @@ import Music from './music';
 
 const Logo = () => {
 
-  const onclick = () => {
-    console.log("hello");
-  }
   const Container = styled.div`
     width: 120px;
      display: flex;

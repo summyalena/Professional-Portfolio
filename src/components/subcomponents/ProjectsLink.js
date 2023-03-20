@@ -13,6 +13,10 @@ const Project = styled.div`
 const NavProject = styled(NavLink)`
   color: var(--main-color);
   text-decoration: none;
+
+  :&active {
+    color: var(--background-color);
+  }
 `
 
 const Projects = () => {

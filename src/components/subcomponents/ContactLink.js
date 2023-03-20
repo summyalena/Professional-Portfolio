@@ -7,6 +7,9 @@ const Contact = styled.div`
     top: 90%;
     left: 35%;
     display: flex;
+    @media (max-width: 760px){
+       
+    }
 `
 
 const NavContact = styled(NavLink)`

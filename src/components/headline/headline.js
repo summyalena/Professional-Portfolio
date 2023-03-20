@@ -6,31 +6,27 @@ import ContactLink from '../subcomponents/ContactLink';
 import BlogLink from '../subcomponents/BlogLink';
 import ProjectsLink from '../subcomponents/ProjectsLink';
 import AboutLink from '../subcomponents/AboutLink';
-import Main from '../main/mainHeadline';
+import { MenuDiv } from '../subcomponents/Menu/MenuDiv.styled';
+
 
 function Headline() {
   const [click, setClick] = useState(false);
 
-  const handleClickOn = () => {
-    setClick(true);
-    console.log('true');
-  }
-
-  const handleClickOff = () => {
-    setClick(false);
-    console.log('true');
+  const handleClick = () => {
+      setClick(!click);
   }
   
   return (
-    <div className={styles.container}>
+    <>
+      <div className={styles.container}>
         <SocialLinks/>
         <AboutLink/>
-        <Writeup clickOn={handleClickOn} clickOff={handleClickOff}/>
+        <Writeup click={click} clickOn={handleClick}/>
         <BlogLink/>
         <ContactLink/>
         <ProjectsLink/>
-        {click ? <Main click={click}/> : null}
     </div>
+    </>
   )
 }
 
