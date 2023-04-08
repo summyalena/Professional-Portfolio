@@ -1,7 +1,6 @@
 import React from 'react'
 import styled, {keyframes} from 'styled-components'
 import TypewriterComponent from 'typewriter-effect'
-import { NavLink } from 'react-router-dom'
 
 
 const button = keyframes`
@@ -14,24 +13,39 @@ const button = keyframes`
 `
 
 const Writes = styled.div`
-   position: absolute;
-   top: 50%;
-   bottom: 50%;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   width: 400px;
-   align-items: center;
-   padding: 0 0 0 35rem;
-   font-family: Playfair Display;
-   font-size: 2rem;
+   @media (min-width: 768px){
+    position: absolute;
+top: 50%;
+bottom: 50%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 400px;
+align-items: center;
+padding: 0 0 0 35rem;
+font-family: Playfair Display;
+font-size: 2rem;
 
-   &>:first-child{
-     display: ${props => props.click ? "none" : "flex"};
+&>:first-child{
+  display: ${props => props.click ? "none" : "flex"};
+}
+   }
+
+   @media (max-width: 768px){
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Playfair Display;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.6rem;
    }
 `
 
-const NavHome = styled(NavLink)`
+const NavHome = styled.a`
    color: var(--main-color);
    background: transparent;
    border: none;
@@ -49,7 +63,7 @@ const NavHome = styled(NavLink)`
    }
 `
 
-const Writeup = ({clickOn, click}) => {
+const Writeup = ({ click}) => {
 
   return (
     <>
@@ -63,7 +77,7 @@ const Writeup = ({clickOn, click}) => {
             }}
     />
    
-    <NavHome exact to="/Main">
+    <NavHome href="/Main">
     Click here to begin!
    </NavHome> 
    </Writes>

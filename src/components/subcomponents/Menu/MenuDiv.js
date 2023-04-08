@@ -2,15 +2,20 @@ import React from 'react'
 import { StyledMenu } from './MenuDiv.styled';
 import { bool } from 'prop-types';
 
-export const MenuWrap = ({open}) => {
+export const MenuWrap = ({open, setOpen}) => {
+
+  const handleClick = () => {
+       setOpen(!open)
+       console.log('hello');
+  }
   return (
     <div>
          <StyledMenu open={open} > 
-      <a href='/'>Home</a>
-      <a href='/About'>About Me</a>
-      <a href='/Projects'>Projects</a>
-      <a href='/Blog'>Blog</a>
-      <a href='/Contact'>Say <span>Hi!</span></a>
+      <a href='#main' onClick={()=> handleClick()}>Home</a>
+      <a href='#about' onClick={() => handleClick()}>About Me</a>
+      <a href='#project' onClick={() => handleClick()}>Projects</a>
+      <a href='#blog' onClick={() => handleClick()}>Blog</a>
+      <a href='#contact' onClick={() => handleClick()}>Say <span>Hi!</span></a>
      </StyledMenu>
     </div>
   )

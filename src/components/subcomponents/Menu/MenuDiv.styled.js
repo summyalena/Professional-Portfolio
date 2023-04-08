@@ -19,6 +19,7 @@ export const StyledMenu = styled.nav`
   transition: transform 0.9s ease-in-out;
       a{
         font-size: 1.2rem;
+        border-bottom: 0.01rem solid;
     text-transform: uppercase;
     padding: 1.8rem 0;
     font-weight: bold;
