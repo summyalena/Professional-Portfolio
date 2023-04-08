@@ -1,11 +1,12 @@
 .mainContainer {
-    background-color: #101820FF;
+    background-color: rgba(16, 24, 32, 0.603);
     align-items: center;
     justify-content: space-around;
     display: flex;
     height: 10vh;
     width: 100%;
     position: fixed;
+    z-index: 20;
 }
 
 .mainContainer .heading:hover {

@@ -14,13 +14,11 @@
 }
 
 .Box {
-    width: 80%;
-    height: 100%;
+    width: 90%;
+    margin: 0.7rem 0;
     justify-content: center;
+    display: flex;
     align-items: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
 }
 
 .miniBox {
@@ -28,8 +26,7 @@
    border-radius: 0.2rem;
    display: flex;
    flex-direction: column;
-   justify-content: center;
-   align-items: center;
+   justify-content: space-between;
    color: var(--main-color);
    font-family: 'Playfair Display', sans-serif ;
    border: 0.7px solid var(--main-color);
@@ -46,17 +43,26 @@
 
 .text {
     padding: 1rem;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 0.8rem;
 }
 
 .image {
     width: 100%;
-    height: 100%;
 }
 
 img {
     width: 100%;
-    height: 100%;
     object-fit: contain;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
 } 
+
+@media (min-width: 240px) and (max-width: 460px){
+    /* .Box {
+      height: 80%;
+    }
+
+     .miniBox {
+        height: 60%;
+         width: 70%;
+     } */
+}

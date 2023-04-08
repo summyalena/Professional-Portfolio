@@ -4,7 +4,7 @@
    position: relative;
    width: 100vw;
    color: var(--main-color);
-   height: 90vh; 
+   height: 100dvh; 
    display: flex;
 }
 
