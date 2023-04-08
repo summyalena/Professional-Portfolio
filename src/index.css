@@ -22,5 +22,66 @@ code {
 :root {
   --background-color: #101820FF;
   --main-color: #FEE715FF;
-  --text-color: #fff;
+  --text-color: #e4e1e1bb;
+  /* background-color: rgba(16, 24, 32, 0.082); */
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-next::after{
+  display: none;
+}
+
+ @keyframes FadeIn {
+    0%{
+      opacity: 0;
+    }
+
+    100%{
+      opacity: 1;
+    }
+ }
+
+.next {
+    color: rgb(35, 126, 236);
+    font-size: 2.5rem;
+    cursor: pointer;
+     z-index: 20;
+     margin-right: 2.7rem;
+     animation: FadeIn 5s infinite;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0.3rem;
+  background: #FEE715FF;
+  transform-origin: 0%;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30vh);
+  visibility: hidden;
+  transition: opacity 1.6s ease-out transform 10s ease-out;
+  will-change: opacity, visibility;
+}
+
+
+.fade-in.is-visible {
+  opacity: 1;
+ transform: none;
+ transition: opacity 7s ease-in;
+  visibility: visible;
+}
+
+
+@media screen and (max-width: 760px){
+    .next{
+      display: none;
+    }
 }
