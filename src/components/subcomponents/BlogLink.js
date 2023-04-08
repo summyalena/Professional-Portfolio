@@ -1,8 +1,10 @@
 import React from 'react'
-import styled from 'styled-components'
-import { NavLink } from 'react-router-dom'
+import styled from 'styled-components';
 
-const Blog = styled.div`
+
+const BlogLink = () => {
+
+  const Blog = styled.div`
     position: absolute;
     top: 50%;
     right: 2%;
@@ -12,14 +14,14 @@ const Blog = styled.div`
     }
 `
 
-const NavBlog = styled(NavLink)`
+const NavBlog = styled.a`
    text-decoration: none;
    color: var(--main-color);
 `
-const BlogLink = () => {
+
   return (
     <Blog>
-      <NavBlog to='/Main'>
+      <NavBlog href='#blog' >
       Blog
       </NavBlog>
     </Blog>

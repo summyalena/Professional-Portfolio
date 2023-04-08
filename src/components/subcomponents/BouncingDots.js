@@ -27,7 +27,7 @@ const bouncingDots = keyframes`
 const BounceDiv = styled.div`
     width:8px;
     height:8px;
-    background-color: #ffe715;
+    background-color: #f7ec8baf;
     margin: 5px 6px;
     border-radius: 50%;
     opacity: 1;
@@ -36,7 +36,7 @@ const BounceDiv = styled.div`
     &:nth-child(2){
         width:11px;
         height:11px;
-        background-color: #ffe715;
+        background-color: #f7ec8baf;
         margin: 5px 6px;
         border-radius: 50%;
         opacity: 1;
@@ -46,7 +46,7 @@ const BounceDiv = styled.div`
     &:nth-child(3){
         width:14px;
         height:14px;
-        background-color: #ffe715;
+        background-color: #f7ec8baf;
         margin: 5px 6px;
         border-radius: 50%;
         opacity: 1;

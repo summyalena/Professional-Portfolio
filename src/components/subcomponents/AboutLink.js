@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { NavLink } from 'react-router-dom'
 
 const AboutLink = () => {
     const About = styled.div`
@@ -13,14 +12,14 @@ const AboutLink = () => {
       display:none;
     }
 `
-    const NavAbout = styled(NavLink)`
+    const NavAbout = styled.a`
        text-decoration: none;
        color: #fee715;
     `
   return (
     <div>
         <About>
-        <NavAbout to='/About'>
+        <NavAbout href='#about'>
          About
          </NavAbout>
         </About>

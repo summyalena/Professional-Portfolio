@@ -1,35 +1,43 @@
-import React from 'react'
-import styled from 'styled-components'
-import { NavLink } from 'react-router-dom'
-import { keyframes } from 'styled-components'
+import React from "react";
+import styled from "styled-components";
+import { keyframes } from "styled-components";
+import Arrow from "../../images/up-chevron (1).png";
+import useScroll from "../../hooks/useScroll";
 
 const BackButton = () => {
+  const scrollY = useScroll();
 
-   const Bounce = keyframes` 
+  console.log(scrollY);
+
+  const Bounce = keyframes` 
    to{
       opacity: 0.6;
       transform: translateY(3px);
      }
-   `
+   `;
 
-    const Back = styled.button`
-        background: rgba(254, 231, 21, 0.767);
-        height: 2rem;
-        width: 2rem;
-        border: none;
-        position: absolute;
-        top: 1%;
-        left: 80%;
-        border-radius: 30%;
-        animation: ${Bounce} 1.6s infinite alternate ;
-    `
+  const Back = styled.button`
+    background: #e4e1e1ad;
+    height: 2rem;
+    padding: 3px 3px;
+    cursor: pointer;
+    width: 2rem;
+    border: none;
+    position: fixed;
+    top: 90%;
+    left: 85%;
+    border-radius: 30%;
+    animation: ${Bounce} 1.6s infinite alternate;
+  `;
   return (
-    <Back>
-        <NavLink exact to='/'>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"/></svg>
-    </NavLink>
-    </Back>
-  )
-}
+    <>
+      {scrollY > 150 && (
+        <Back onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+          <img src={Arrow} alt="arrow" />
+        </Back>
+      )}
+    </>
+  );
+};
 
 export default BackButton;
