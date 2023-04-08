@@ -6,7 +6,6 @@ import ContactLink from '../subcomponents/ContactLink';
 import BlogLink from '../subcomponents/BlogLink';
 import ProjectsLink from '../subcomponents/ProjectsLink';
 import AboutLink from '../subcomponents/AboutLink';
-import { MenuDiv } from '../subcomponents/Menu/MenuDiv.styled';
 
 
 function Headline() {

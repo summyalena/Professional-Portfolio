@@ -7,11 +7,15 @@ import MainHeadline from './mainHeadline';
 import Projects from '../Projects/Projects';
 import Blog from '../Blog/Blog';
 import SocialLinks from '../subcomponents/socialLinks'
+import Footer from '../Footer/Footer';
+import { useScroll, motion } from 'framer-motion';
 
 
 const Main = () => {
+  const { scrollYProgress } = useScroll()
   return (
     <>
+    <motion.div className="progress-bar" style={{scaleX: scrollYProgress}}/>
     <Headers/>
     <div className={styles.container}>
         <div className={styles.wrapper}>
@@ -21,6 +25,7 @@ const Main = () => {
      <Projects/>
      <Blog/>
      <Contact/>
+     <Footer/>
      </div>
     </div>
     </>
