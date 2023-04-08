@@ -1,7 +1,26 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import styles from './Blog.module.css'
-import medium from '../../images/medium printout.JPG'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import Blogs from '../../Data/blog'
+import { Navigation, Pagination, Scrollbar } from 'swiper'
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar'
+import { FaArrowAltCircleRight } from 'react-icons/fa'
+
+
+const zoom = keyframes`
+   from{
+    opacity: 0;
+   }
+
+   to{
+    opacity: 1;
+   }
+ 
+`
 
 const Header = styled.div`
  display: flex;
@@ -12,47 +31,60 @@ const Header = styled.div`
   color: var(--main-color);
 `
 
-const Button = styled.button`
+const Button = styled.a`
     background-color: var(--main-color);
-    padding: 0.5rem 1.2rem;
-    border-radius: 0.3rem;
-    color: white;
+    padding: 0.4rem 1.2rem;
+    text-decoration: none;
+    border-radius: 0.1rem;
+    color: var(--background-color);
+    font-weight: bolder;
+    animation: ${zoom} 1.9s alternate infinite;
 `
 
 
 const Blog = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id='blog'>
      <div className={styles.wrapper}>
      <Header>
            My Blog..
         </Header>
-        <div className={styles.Box}>
-          <div className={styles.miniBox}>
-             <div className={styles.image}>
-              <img src={medium} alt='medium'/>
-             </div>
-              <div className={styles.text}>
-                This Blog is an introductory article for anyone new to Vercel and Netlify. This article guides a newbie to successfully deploy a work with no stress
-              </div>
-              <Button>
-                Click Me
-              </Button>
+        <Swiper 
+         modules={[Navigation, Pagination, Scrollbar]}
+         slidesPerView={'auto'}
+         spaceBetween={30}
+         navigation={{
+           nextEl: '.next',
+           clickable: true,
+         }}
+         pagination={{el:'.swiper-pagination', clickable: true}}
+         effect={'slide'}
+         grabCursor={true}
+         centeredSlides={true}
+         loop={true}
+        className={styles.Box}>
+         {Blogs.map((blog)=>
+         <SwiperSlide className={styles.miniBox} key={blog.id}>
+         <div className={styles.image}>
+          <img src={blog.image} alt={blog.name}/>
+         </div>
+
+          <div className={styles.text}>
+            {blog.description}
           </div>
 
-          <div className={styles.miniBox}>
-             <div className={styles.image}>
-             <img src={medium} alt='medium'/>
-             </div>
-              <div className={styles.text}>
-                This Blog is an introductory article for anyone new to Vercel and Netlify. This article guides a newbie to successfully deploy a work with no stress
-              </div>
-              <Button>
-                Click Me
-              </Button>
-          </div>
+          <Button href={blog.link}>
+            Click to see <span className={styles.article}>Article!</span>
+          </Button>
           
-          </div> 
+      </SwiperSlide>
+       )} 
+       
+          <div className='next'>
+            <FaArrowAltCircleRight/>
+          </div>
+          </Swiper> 
+          
      </div>
       </div>
   )

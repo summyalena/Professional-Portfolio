@@ -17,7 +17,7 @@ const Header = styled.div`
 `
 const AboutPage = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id='about'>
       <div className={styles.wrapper}>
         <Header>
            About Me..
