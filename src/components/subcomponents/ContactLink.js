@@ -1,18 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
-import { NavLink } from 'react-router-dom'
+
 
 const Contact = styled.div`
-    position: absolute;
-    top: 90%;
-    left: 35%;
-    display: flex;
-    @media (max-width: 760px){
-       
-    }
+  position: absolute;
+  top: 90%;
+  left: 35%;
+  display: flex;
+  @media (max-width: 760px){
+      display: none;
+  }
 `
 
-const NavContact = styled(NavLink)`
+const NavContact = styled.a`
    text-decoration: none;
    color: var(--main-color);
 
@@ -21,9 +21,10 @@ const NavContact = styled(NavLink)`
    }
 `
 const ContactLink = () => {
+ 
   return (
     <Contact>
-        <NavContact to='/Contact'>
+          <NavContact href='#contact'>
        Contact 
        </NavContact>
         </Contact>
