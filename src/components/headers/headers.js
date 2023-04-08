@@ -8,19 +8,20 @@ import Burger from '../subcomponents/burger/burger';
 import { MenuWrap } from '../subcomponents/Menu/MenuDiv';
 
 function Headers() {
+  
  const [ open, setOpen] = useState(false);
 
   return (
     <div className={styles.mainContainer}>
-      <NavLink className={styles.link} exact to='/'>
+      <a className={styles.link} href='/'>
       <Logo/>
-     </NavLink>
-     <NavLink className={styles.link} exact to='/'>
+     </a>
+     <a className={styles.link} href='/'>
      <Home/>
-     </NavLink>
-     <NavLink className={styles.SayHi} exact to='/Contact'>Say hi!</NavLink>
-     <Burger className={styles.burger} open={open} setOpen={setOpen}/>
-     <MenuWrap open={open} setOpen={setOpen}/>
+     </a>
+     <a className={styles.SayHi} href='/Contact'>Say hi!</a>
+     <Burger  className={styles.burger} open={open} setOpen={setOpen}/>
+     <MenuWrap  open={open} setOpen={setOpen}/>
     </div>
   )
 }

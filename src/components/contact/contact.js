@@ -1,8 +1,6 @@
-import React from 'react'
+import React from 'react';
 import styles from './contact.module.css'
 import styled from 'styled-components'
-
-
 
 const Header = styled.div`
 display: flex;
@@ -14,7 +12,7 @@ justify-content: center;
 
 const Contact = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id='contact'>
        <div className={styles.wrapper}>
        <Header>
           Contact Page
