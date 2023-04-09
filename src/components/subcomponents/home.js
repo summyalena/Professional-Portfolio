@@ -5,8 +5,9 @@ import styled from 'styled-components';
 const HomeLogo = styled.div`
    color: #fee715ff;
    border-radius: 100%;
-   padding: 4px;
-   border: 1px solid;
+   padding: 0.6rem;
+   border: 0.2rem solid;
+   margin-right: 4.6rem;
    @media (max-width: 760px){
       display:none;
    }

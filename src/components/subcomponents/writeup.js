@@ -1,7 +1,7 @@
 import React from 'react'
 import styled, {keyframes} from 'styled-components'
 import TypewriterComponent from 'typewriter-effect'
-
+import Avatar from '../../images/AvatarMaker (1).png'
 
 const button = keyframes`
   from {
@@ -12,17 +12,23 @@ const button = keyframes`
   }
 `
 
+const Writee = styled.div`
+  width: 100%;
+  height: 100%;
+`
+
 const Writes = styled.div`
    @media (min-width: 768px){
-    position: absolute;
+    position: fixed;
+    background-color: blue;
 top: 50%;
 bottom: 50%;
+width: 100%;
 display: flex;
 flex-direction: column;
 justify-content: center;
-width: 400px;
+
 align-items: center;
-padding: 0 0 0 35rem;
 font-family: Playfair Display;
 font-size: 2rem;
 
@@ -67,7 +73,9 @@ const Writeup = ({ click}) => {
 
   return (
     <>
+    <Writee>
     <Writes click={click} >
+      <img className='meMain' src={Avatar} alt="avatar"/>
       <TypewriterComponent 
             options={{
                strings: ["Hello!", "Welcome to my portfolio page!", "Have a nice day! "],
@@ -81,6 +89,7 @@ const Writeup = ({ click}) => {
     Click here to begin!
    </NavHome> 
    </Writes>
+   </Writee>
    </>
   )
 }
