@@ -13,14 +13,22 @@ function Headers() {
 
   return (
     <div className={styles.mainContainer}>
+      <div className={styles.wrapper}>
+        <div className={styles.links}>
       <a className={styles.link} href='/'>
       <Logo/>
      </a>
+     </div>
+     <div className={styles.links}>
      <a className={styles.link} href='/'>
      <Home/>
      </a>
+     </div>
+     <div className={styles.links}>
      <a className={styles.SayHi} href='/Contact'>Say hi!</a>
-     <Burger  className={styles.burger} open={open} setOpen={setOpen}/>
+     </div>
+    </div>
+    <Burger  className={styles.burger} open={open} setOpen={setOpen}/>
      <MenuWrap  open={open} setOpen={setOpen}/>
     </div>
   )

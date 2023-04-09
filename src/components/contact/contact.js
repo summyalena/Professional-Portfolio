@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './contact.module.css'
 import styled from 'styled-components'
+import FadeIn from '../../hooks/fadeIn';
 
 const Header = styled.div`
 display: flex;
@@ -12,6 +13,7 @@ justify-content: center;
 
 const Contact = () => {
   return (
+    <FadeIn>
     <div className={styles.container} id='contact'>
        <div className={styles.wrapper}>
        <Header>
@@ -43,6 +45,7 @@ const Contact = () => {
         </form>
         </div>  
     </div>
+    </FadeIn>
   )
 }
 
