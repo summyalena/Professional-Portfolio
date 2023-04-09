@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    text-decoration: none;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-self: baseline;
+    background-color: blue;
+}
