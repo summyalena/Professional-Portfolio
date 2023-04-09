@@ -1,7 +1,7 @@
 .container {
   background-color: var(--background-color);
-   overflow: hidden;
-   position: relative;
+  overflow: hidden; 
+    position: relative;
    width: 100vw;
    color: var(--main-color);
    height: 100dvh; 
