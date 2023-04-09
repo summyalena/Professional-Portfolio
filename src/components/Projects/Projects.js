@@ -9,6 +9,7 @@ import 'swiper/css/pagination'
 import 'swiper/css/effect-coverflow';
 import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
 import {Navigation, Pagination, EffectCoverflow, Thumbs} from 'swiper';
+import FadeIn from '../../hooks/fadeIn';
 
 const bounce = keyframes`
    from {
@@ -46,6 +47,7 @@ const Github = styled.a`
 `
 const Projects = () => {
   return (
+    <FadeIn>
     <div className={styles.container} id='project'>
        <Header>
            My Projects
@@ -117,6 +119,7 @@ const Projects = () => {
     </div>
     
     </div>
+    </FadeIn>
   )
 }
 

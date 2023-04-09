@@ -1,8 +1,15 @@
 import React from 'react'
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import ContactLink from '../subcomponents/ContactLink';
 import AboutLink from '../subcomponents/AboutLink';
 import FadeIn from '../../hooks/fadeIn';
+import FileSaver from 'file-saver';
+import Avatar from '../../images/AvatarMaker (1).png'
+
+const saveFile = () => {
+    FileSaver.saveAs(process.env.REACT_APP_CLIENT_URL + "/assests/Assumpta-Okolike-Resume.pdf", "Assumpta-Okolike-Resume.pdf");
+  console.log("hello");
+  }
 
 
 const BlogNLink = styled.div`
@@ -81,6 +88,7 @@ background-color: rgba(16, 24, 32, 0.082);
 display: flex;
 justify-content: center;
 align-items: center;
+align-content: left;
 
 @media (max-width: 768px){
   width: 100%;
@@ -98,7 +106,7 @@ const Write = styled.div`
    flex-direction: column;
    color: var(--text-color);
    justify-content: center;
-   align-items: center;
+   align-items: left;
    font-family: 'Roboto';
 
    @media (max-width: 768px){
@@ -124,20 +132,33 @@ align-items: center;
 }
 `
 
+const rotate = keyframes`
+     from {
+      transform: rotate(0deg);
+     }
+
+     to {
+      transform: rotate(350deg);
+     }
+`
 
 
 const ImageBox = styled.div`
     width: 50%;
     height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 5rem;
+    border-top-right-radius: 5rem;
     background-color: white;
+    animation: ${rotate} 3s;
 
     @media (max-width: 760px){
-       position: absolute;
-       top: -15%;
-       left: 24%;
-       height: 60%;
-       width: 65%;
+      width: 80%;
+      height: 80%;
     }
+
 `
 
 const Span = styled.div`
@@ -145,9 +166,25 @@ const Span = styled.div`
 
 `
 
-const Button = styled.button`
-   padding: 1rem;
-   border-radius: 0.2rem
+const Button = styled.a`
+   padding: 0.8rem 1.1rem;
+   border-radius: 0.5rem;
+   width: 4rem;
+   background-color: #fee715;
+   margin: 0.8rem 0;
+   border: black 0.2rem solid;
+   color: var(--background-color);
+
+   &:hover {
+     background-color: black;
+     transition: ease-in-out 2s;
+     color: #fee715;
+     border: #fee715 0.2rem solid;
+   }
+
+   @media (max-width: 760px){
+      
+   }
 `
 
 
@@ -159,19 +196,20 @@ const MainHeadline = () => {
       <Writeup>
         <Write>
         <FadeIn>
-          <h1>I am <Span>Assumpta Okolike </Span></h1>
+          <h2>I am <Span>Assumpta Okolike </Span></h2>
         </FadeIn>
          <FadeIn>
           <h3>I turn Vision into Reality with Code And Design. </h3>
+         
          </FadeIn>
-         <Button>
-          <button>Resume</button>
+         <Button onClick={saveFile}>
+          Resume
          </Button>
       </Write>
       </Writeup>
       <Image>
         <ImageBox>
-
+        <img className="me" src={Avatar} alt="avatar"/>
         </ImageBox>
       </Image>
       <BlogNLink>

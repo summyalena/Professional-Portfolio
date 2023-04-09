@@ -6,7 +6,7 @@ import ContactLink from '../subcomponents/ContactLink';
 import BlogLink from '../subcomponents/BlogLink';
 import ProjectsLink from '../subcomponents/ProjectsLink';
 import AboutLink from '../subcomponents/AboutLink';
-
+import Avatar from '../../images/AvatarMaker (1).png'
 
 function Headline() {
   const [click, setClick] = useState(false);
@@ -19,11 +19,9 @@ function Headline() {
     <>
       <div className={styles.container}>
         <SocialLinks/>
-        <AboutLink/>
+        
         <Writeup click={click} clickOn={handleClick}/>
-        <BlogLink/>
-        <ContactLink/>
-        <ProjectsLink/>
+      
     </div>
     </>
   )
