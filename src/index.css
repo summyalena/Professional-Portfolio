@@ -23,7 +23,6 @@ code {
   --background-color: #101820FF;
   --main-color: #FEE715FF;
   --text-color: #e4e1e1bb;
-  /* background-color: rgba(16, 24, 32, 0.082); */
 }
 
 .swiper-button-prev::after {
@@ -48,9 +47,9 @@ code {
     color: rgb(35, 126, 236);
     font-size: 2.5rem;
     cursor: pointer;
-     z-index: 20;
+     z-index: 50;
      margin-right: 2.7rem;
-     animation: FadeIn 5s infinite;
+     animation: FadeIn 4s infinite;
 }
 
 .progress-bar {

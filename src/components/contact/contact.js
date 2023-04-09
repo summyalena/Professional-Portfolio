@@ -23,22 +23,22 @@ const Contact = () => {
              <p> You can reach out to me for any questions or propositions. I will be pleased to hear from you. </p>
            <div className={styles.coInput}>
             <div className={styles.input}>
-                  <label for="name">First Name</label>
+                  <label htmlFor="name">First Name</label>
                   <input name="first name" type="name" placeholder='Enter First Name' />
               </div>
            
               <div className={styles.input}>
-                  <label id="name_label" for="name">Second Name</label>
+                  <label id="name_label" htmlFor="name">Second Name</label>
                   <input id="email" name="name" type="text" placeholder='Enter Second Name' />
               </div>
                </div>
               <div className={styles.inputn}>
-                  <label id="email_label" for="email">Email Address</label>
+                  <label id="email_label" htmlFor="email">Email Address</label>
                   <input id="email" name="email" type="email" placeholder='Enter Email' />
               </div>
 
               <div className={styles.inputn}>
-                <label id="text_label" for="message">Message</label>
+                <label id="text_label" htmlFor="message">Message</label>
                 <textarea  width="200px" height="200px" placeholder='Enter Message'/>
               </div>
               <button className={styles.button} type='submit'>Send</button>

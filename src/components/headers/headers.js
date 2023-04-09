@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import styles from './Headers.module.css'
-import { NavLink } from 'react-router-dom';
 import Logo from '../subcomponents/logo';
 import Home from '../subcomponents/home';
 import { bool, func } from 'prop-types';
@@ -34,9 +33,9 @@ function Headers() {
   )
 }
 
-Headers.propTypes = {
-  open: bool.isRequired,
-  setOpen: func.isRequired,
-};
+// Headers.propTypes = {
+//   open: bool.isRequired,
+//   setOpen: func.isRequired,
+// };
 
 export default Headers;

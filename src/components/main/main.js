@@ -6,6 +6,7 @@ import Headers from '../headers/headers';
 import MainHeadline from './mainHeadline';
 import Projects from '../Projects/Projects';
 import Blog from '../Blog/Blog';
+import BackButton from '../subcomponents/backButton'
 import SocialLinks from '../subcomponents/socialLinks'
 import Footer from '../Footer/Footer';
 import { useScroll, motion } from 'framer-motion';
@@ -20,12 +21,13 @@ const Main = () => {
     <div className={styles.container}>
         <div className={styles.wrapper}>
     <MainHeadline/>
-    <SocialLinks/>
      <AboutPage/>
      <Projects/>
      <Blog/>
      <Contact/>
      <Footer/>
+     <SocialLinks/>
+     <BackButton/>
      </div>
     </div>
     </>

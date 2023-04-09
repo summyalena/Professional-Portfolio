@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyledMenu } from './MenuDiv.styled';
-import { bool } from 'prop-types';
+// import { bool } from 'prop-types';
 
 export const MenuWrap = ({open, setOpen}) => {
 
@@ -21,6 +21,6 @@ export const MenuWrap = ({open, setOpen}) => {
   )
 }
 
-MenuWrap.propTypes = {
-   open: bool.isRequired,
-}
+// MenuWrap.propTypes = {
+//    open: bool.isRequired,
+// }

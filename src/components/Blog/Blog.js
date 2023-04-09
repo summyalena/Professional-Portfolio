@@ -58,8 +58,8 @@ const Blog = () => {
            nextEl: '.next',
            clickable: true,
          }}
-         pagination={{el:'.swiper-pagination', clickable: true}}
-         effect={'slide'}
+         pagination={{ clickable: true}}
+        //  effect={'slide'}
          grabCursor={true}
          centeredSlides={true}
          loop={true}
@@ -88,7 +88,7 @@ const Blog = () => {
           
      </div>
       </div>
-      </FadeIn>
+       </FadeIn>
   )
 }
 

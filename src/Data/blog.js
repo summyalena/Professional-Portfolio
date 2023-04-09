@@ -25,7 +25,7 @@ const Blogs = [
         link: 'https://www.google.com'
     },
     {
-        id: 3,
+        id: 4,
         name: 'Deploying my first project on Vercel',
         description: 'This talks about to deploy your Nextjs first project on Vercel',
         image: medium,

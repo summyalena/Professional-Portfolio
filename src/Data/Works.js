@@ -20,7 +20,7 @@ const Work = [
 },
 
 {
-    id: 2,
+    id: 3,
     name: 'Conference',
     description: 'This is a website created to share awareness, created with html, css and javascript',
     image: 'http://www.google.com',
@@ -30,7 +30,7 @@ const Work = [
 },
 
 {
-    id: 2,
+    id: 4,
     name: 'Conference',
     description: 'This is a website created to share awareness, created with html, css and javascript',
     image: 'http://www.google.com',
@@ -40,7 +40,7 @@ const Work = [
 },
 
 {
-    id: 2,
+    id: 5,
     name: 'Conference',
     description: 'This is a website created to share awareness, created with html, css and javascript',
     image: 'http://www.google.com',

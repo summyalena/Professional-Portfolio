@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './about.module.css'
 import styled from 'styled-components'
-import BackButton from '../subcomponents/backButton'
+
 import Avatar from '../../images/AvatarMaker (1).png'
 import FadeIn from '../../hooks/fadeIn'
 
@@ -41,9 +41,8 @@ const AboutPage = () => {
         </div>
       </div>
       </div>
-      <BackButton/>
       </div>
-      </FadeIn>
+       </FadeIn>
   )
 }
 

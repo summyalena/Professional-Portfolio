@@ -1,11 +1,12 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useRef, useState } from 'react';
 import { useEffect } from 'react';
 
 
 const FadeIn = (props) => {
-  const [isVisible, setIsInvisible] = React.useState(false);
-   const Ref = React.useRef()
-  React.useEffect(() => {
+  const [isVisible, setIsInvisible] = useState(false);
+   const Ref = useRef()
+  useEffect(() => {
      const observer = new IntersectionObserver(entries => {
          entries.forEach(entry => setIsInvisible(entry.isIntersecting));
         
