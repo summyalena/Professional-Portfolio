@@ -1,12 +1,15 @@
+import Image1 from './tastymeals.png'
+
+
 const Work = [
     {
     id: 1,
-    name: 'Twitter Clone' ,
-    description: 'This is a project that was built using Nextjs',
-    image: 'http:www.google.com',
-    link: 'http://www.google.com',
+    name: 'Tasty Meals' ,
+    description: 'This is a web Application that does the basic booking functionalities online for home made meals in Nigeria. Built using react and Tailwind CSS.',
+    image: Image1,
+    link: 'https://tastmeals.netlify.app/',
     techStack: 'Next.js | Tailwind CSS | Firebase ',
-    githubLink: 'https://github.com/summyalena/'
+    githubLink: 'https://github.com/summyalena/Tasty-Meals'
 },
  
 {
