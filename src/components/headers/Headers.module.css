@@ -4,6 +4,7 @@
     width: 100%;
     position: fixed;
     z-index: 30;
+    backdrop-filter: blur(7px);
 }
 
 .wrapper {

@@ -22,7 +22,7 @@
     background-color: rgba(9, 15, 24, 0.90);
     width: 400px;
     display: flex;
-    /* background-color: #FEE715FF; */
+    /* background-image: ; */
     border-top-right-radius: 2.5rem;
     border-bottom-left-radius: 2.5rem;
     flex-direction: column;
@@ -121,6 +121,7 @@
 
      .box {
         display: flex;
+        width: 100%;
         flex-direction: column;
         justify-content: center;
         padding: 1.4rem;
