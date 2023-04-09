@@ -63,6 +63,15 @@
     background-color: #fee715;
 }
 
+.me {
+    display: flex;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 25rem;
+    height: 25rem;
+    transform: translate(-50%, -50%);
+}
 @media screen and (max-width: 760px){
     .overall{
         display: flex;
@@ -83,5 +92,15 @@
     .imageBox{
       height: 60%; 
       width: 60%; 
+    }
+
+    .me {
+        display: flex;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        width: 20rem;
+        height: 20rem;
+        transform: translate(-50%, -50%);
     }
 }

@@ -67,7 +67,7 @@ code {
   opacity: 0;
   transform: translateY(30vh);
   visibility: hidden;
-  transition: opacity 1.6s ease-out transform 10s ease-out;
+  transition: opacity 1.6s ease-out transform 6s ease-out;
   will-change: opacity, visibility;
 }
 
@@ -75,13 +75,50 @@ code {
 .fade-in.is-visible {
   opacity: 1;
  transform: none;
- transition: opacity 7s ease-in;
+ transition: opacity 3s ease-in;
   visibility: visible;
+  transform:rotateX(30);
 }
 
+.me {
+  width: 25rem;
+  height: 25rem;
+}
 
-@media screen and (max-width: 760px){
+.meMain {
+   width: 10rem;
+   height: 10rem;
+   border-radius: 100%;
+   border: 0.4rem var(--main-color) solid;
+}
+
+@media (max-width: 760px){
     .next{
       display: none;
     }
+}
+
+
+@media (min-width: 260px) and (max-width: 440px){
+  .next{
+    display: none;
+    
+  }
+
+  .me {
+    width: 17rem;
+    height: 17rem;
+  }
+}
+
+@media  (min-width: 440px) and (max-width: 770px){
+  .next{
+    display: none;
+    
+  }
+
+  .me {
+   width: 21rem;
+    height: 21rem; 
+  }
 }

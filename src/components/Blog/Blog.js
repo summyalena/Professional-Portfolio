@@ -9,7 +9,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar'
 import { FaArrowAltCircleRight } from 'react-icons/fa'
-
+import FadeIn from '../../hooks/fadeIn'
 
 const zoom = keyframes`
    from{
@@ -44,6 +44,7 @@ const Button = styled.a`
 
 const Blog = () => {
   return (
+    <FadeIn>
     <div className={styles.container} id='blog'>
      <div className={styles.wrapper}>
      <Header>
@@ -87,6 +88,7 @@ const Blog = () => {
           
      </div>
       </div>
+      </FadeIn>
   )
 }
 

@@ -2,6 +2,9 @@ import React from 'react'
 import styles from './about.module.css'
 import styled from 'styled-components'
 import BackButton from '../subcomponents/backButton'
+import Avatar from '../../images/AvatarMaker (1).png'
+import FadeIn from '../../hooks/fadeIn'
+
 
 const Header = styled.div`
  display: flex;
@@ -17,6 +20,7 @@ const Header = styled.div`
 `
 const AboutPage = () => {
   return (
+    <FadeIn>
     <div className={styles.container} id='about'>
       <div className={styles.wrapper}>
         <Header>
@@ -31,7 +35,7 @@ const AboutPage = () => {
       <div className={styles.images}>
         <div className={styles.imageBox}>
             <div className={styles.imageBoxx}>
-
+         <img className={styles.me} src={Avatar} alt="avatar"/>
             </div>
         </div>
         </div>
@@ -39,6 +43,7 @@ const AboutPage = () => {
       </div>
       <BackButton/>
       </div>
+      </FadeIn>
   )
 }
 
