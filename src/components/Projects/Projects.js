@@ -78,7 +78,7 @@ const Projects = () => {
         className={styles.projectBox}>
        {Work.map((project) =>
          <SwiperSlide key={project.id}>
-         <div className={styles.box} >
+         <div className={styles.box}>
           <div className={styles.title}>
              {project.name}
           </div>
@@ -103,8 +103,8 @@ const Projects = () => {
               </Github>
              </div>
              </div>
-          </div>
-         </SwiperSlide>
+             </div>
+          </SwiperSlide>
          )}
          <div className={styles.controller}>
          <div className="swiper-button-prev">

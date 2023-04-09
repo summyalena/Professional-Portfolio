@@ -5,6 +5,7 @@
     position: fixed;
     backdrop-filter: blur(7px);
     z-index: 30;
+    backdrop-filter: blur(7px);
 }
 
 .wrapper {

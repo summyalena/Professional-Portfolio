@@ -179,6 +179,7 @@ const Button = styled.a`
      background-color: black;
      transition: ease-in-out 2s;
      color: #fee715;
+     cursor: pointer;
      border: #fee715 0.2rem solid;
    }
 
