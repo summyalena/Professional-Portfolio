@@ -213,13 +213,13 @@ const MainHeadline = () => {
         </ImageBox>
       </Image>
       <BlogNLink>
-        <NavBlog href='blog'>
+        <NavBlog href='#blog'>
             Blog
         </NavBlog>
         </BlogNLink>
       <ContactLink/>
       <ProjectsNLink>
-        <NavProject href='project'>
+        <NavProject href='#project'>
         Projects
         </NavProject>
         </ProjectsNLink>
