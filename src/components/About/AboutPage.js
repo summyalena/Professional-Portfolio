@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './about.module.css'
 import styled from 'styled-components'
 
-import Avatar from '../../images/AvatarMaker (1).png'
+import Avatar from '../../images/AvatarMaker(1).png'
 import FadeIn from '../../hooks/fadeIn'
 
 

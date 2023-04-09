@@ -6,7 +6,7 @@ import ContactLink from '../subcomponents/ContactLink';
 import BlogLink from '../subcomponents/BlogLink';
 import ProjectsLink from '../subcomponents/ProjectsLink';
 import AboutLink from '../subcomponents/AboutLink';
-import Avatar from '../../images/AvatarMaker (1).png'
+import Avatar from '../../images/AvatarMaker(1).png'
 
 function Headline() {
   const [click, setClick] = useState(false);

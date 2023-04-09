@@ -6,7 +6,6 @@ export const MenuWrap = ({open, setOpen}) => {
 
   const handleClick = () => {
        setOpen(!open)
-       console.log('hello');
   }
   return (
     <div>

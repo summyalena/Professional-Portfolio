@@ -4,11 +4,10 @@ import ContactLink from '../subcomponents/ContactLink';
 import AboutLink from '../subcomponents/AboutLink';
 import FadeIn from '../../hooks/fadeIn';
 import FileSaver from 'file-saver';
-import Avatar from '../../images/AvatarMaker (1).png'
+import Avatar from '../../images/AvatarMaker(1).png'
 
 const saveFile = () => {
-    FileSaver.saveAs(process.env.REACT_APP_CLIENT_URL + "/assests/Assumpta-Okolike-Resume.pdf", "Assumpta-Okolike-Resume.pdf");
-  console.log("hello");
+    FileSaver.saveAs(process.env.REACT_APP_CLIENT_URL + "/assests/AssumptaOkolike-Resume.pdf", "AssumptaOkolike-Resume.pdf");
   }
 
 

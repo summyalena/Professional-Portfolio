@@ -7,8 +7,6 @@ import useScroll from "../../hooks/useScroll";
 const BackButton = () => {
   const scrollY = useScroll();
 
-  console.log(scrollY);
-
   const Bounce = keyframes` 
    to{
       opacity: 0.6;

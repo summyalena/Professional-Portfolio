@@ -12,7 +12,6 @@ const FadeIn = (props) => {
         
      })
       observer.observe(Ref.current);
-      console.log(Ref.current)
     return () => observer.unobserve(Ref.current);
   }, [])
    
