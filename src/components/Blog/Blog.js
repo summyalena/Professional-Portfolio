@@ -52,20 +52,20 @@ const Blog = () => {
         </Header>
         <Swiper 
          modules={[Navigation, Pagination, Scrollbar]}
-         slidesPerView={'auto'}
+         slidesPerView={2}
          spaceBetween={30}
          navigation={{
            nextEl: '.next',
            clickable: true,
          }}
          pagination={{ clickable: true}}
-        //  effect={'slide'}
          grabCursor={true}
          centeredSlides={true}
          loop={true}
         className={styles.Box}>
          {Blogs.map((blog)=>
-         <SwiperSlide className={styles.miniBox} key={blog.id}>
+         <SwiperSlide  key={blog.id}>
+         <div className={styles.miniBox}>
          <div className={styles.image}>
           <img src={blog.image} alt={blog.name}/>
          </div>
@@ -77,7 +77,7 @@ const Blog = () => {
           <Button href={blog.link}>
             Click to see <span className={styles.article}>Article!</span>
           </Button>
-          
+          </div>
       </SwiperSlide>
        )} 
        
