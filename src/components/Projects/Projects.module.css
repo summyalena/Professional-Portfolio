@@ -76,6 +76,7 @@
    background-color: #FEE715FF;
    font-size: 0.8rem;
    font-weight: bold;
+   text-decoration: none;
    border-radius: 0.3rem;
    border: transparent 0.1rem;
 }
@@ -114,6 +115,16 @@
   }
 
 @media screen and  (max-width: 760px){
+
+   .container {
+     margin-top: 5rem;
+     height: 100%;
+   }
+
+   .wrapper {
+      height: 100%;
+   }
+
     .projectBox {
        width: 95%;
     }
