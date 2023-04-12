@@ -160,11 +160,6 @@ const ImageBox = styled.div`
 
 `
 
-const Span = styled.div`
-  color:#E3735E;
-
-`
-
 const Button = styled.a`
    padding: 0.8rem 1.1rem;
    border-radius: 0.5rem;
@@ -190,16 +185,19 @@ const Button = styled.a`
 
 const MainHeadline = () => {
   return (
+    <FadeIn>
    <Container id="main">
       <Wrapper>
         <AboutLink/>
       <Writeup>
         <Write>
         <FadeIn>
-          <h2>I am <Span>Assumpta Okolike </Span></h2>
+          <h2>I am <h3 style={{color: "#E3735E"}}>Assumpta Okolike </h3></h2>
         </FadeIn>
          <FadeIn>
-          <h3>I turn Vision into Reality with Code And Design. </h3>
+          <h3>I turn Vision into Reality with Code And Design.
+             </h3>
+             <span> I am also proficient in using the following frameworks: React, Nextjs Framework, Tailwind CSS and Javascript. I am committed to helping you build a simple and responsive web application for use!</span>
          
          </FadeIn>
          <Button onClick={saveFile}>
@@ -225,6 +223,7 @@ const MainHeadline = () => {
         </ProjectsNLink>
       </Wrapper>
    </Container>
+   </FadeIn>
   )
 }
 
