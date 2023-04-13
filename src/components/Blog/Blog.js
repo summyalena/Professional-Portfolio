@@ -7,7 +7,7 @@ import { Navigation, Pagination, Scrollbar } from 'swiper'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import 'swiper/css/scrollbar'
+import 'swiper/css/scrollbar';
 import { FaArrowAltCircleRight } from 'react-icons/fa'
 import FadeIn from '../../hooks/fadeIn'
 

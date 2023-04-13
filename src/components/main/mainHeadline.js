@@ -192,7 +192,7 @@ const MainHeadline = () => {
       <Writeup>
         <Write>
         <FadeIn>
-          <h2>I am <h3 style={{color: "#E3735E"}}>Assumpta Okolike </h3></h2>
+          <h2>I am <span style={{color: "#E3735E"}}>Assumpta Okolike </span></h2>
         </FadeIn>
          <FadeIn>
           <h3>I turn Vision into Reality with Code And Design.
