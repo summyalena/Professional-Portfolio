@@ -1,11 +1,10 @@
 import React from 'react'
-import Main from './components/main/main'
-// import Headline from './components/headline/headline';
+import Headline from './components/headline/Main'
 
 function Home() {
   return (
     <div>
-     <Main/>
+     <Headline/>
     </div>
   )
 }
