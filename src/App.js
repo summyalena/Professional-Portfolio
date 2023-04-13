@@ -1,7 +1,7 @@
 import './App.css';
 import Home from './Home';
 import { Route, Routes } from 'react-router-dom';
-import Main from './components/main/main';
+import Main from './components/main/Headline';
 
 
 function App() {
