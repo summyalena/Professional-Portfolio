@@ -2,9 +2,9 @@ import React, {useState} from 'react'
 import styles from './Headers.module.css'
 import Logo from '../subcomponents/logo';
 import Home from '../subcomponents/home';
-import { bool, func } from 'prop-types';
 import Burger from '../subcomponents/burger/burger';
 import { MenuWrap } from '../subcomponents/Menu/MenuDiv';
+
 
 function Headers() {
   
@@ -32,10 +32,5 @@ function Headers() {
     </div>
   )
 }
-
-// Headers.propTypes = {
-//   open: bool.isRequired,
-//   setOpen: func.isRequired,
-// };
 
 export default Headers;
