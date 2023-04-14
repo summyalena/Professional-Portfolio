@@ -7,6 +7,7 @@ import MainHeadline from './mainHeadline';
 import Projects from '../Projects/Projects';
 import Blog from '../Blog/Blog';
 import BackButton from '../subcomponents/backButton'
+import NavBar from '../Navigation/NavBar';
 import SocialLinks from '../subcomponents/socialLinks'
 import Footer from '../Footer/Footer';
 import { useScroll, motion } from 'framer-motion';
@@ -17,7 +18,7 @@ const Main = () => {
   return (
     <>
     <motion.div className="progress-bar" style={{scaleX: scrollYProgress}}/>
-    {/* <Headers/> */}
+    <NavBar/>
     <div className={styles.container}>
         <div className={styles.wrapper}>
     <MainHeadline/>

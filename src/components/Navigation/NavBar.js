@@ -1,12 +1,12 @@
 import React, {useState} from 'react'
-import styles from './Headers.module.css'
+import styles from './NavBar.module.css'
 import Logo from '../subcomponents/logo';
 import Home from '../subcomponents/home';
 import Burger from '../subcomponents/burger/burger';
 import { MenuWrap } from '../subcomponents/Menu/MenuDiv';
 
 
-function Headers() {
+function NavBar() {
   
  const [ open, setOpen] = useState(false);
 
@@ -33,4 +33,4 @@ function Headers() {
   )
 }
 
-export default Headers;
+export default NavBar;
