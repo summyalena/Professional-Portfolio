@@ -2,6 +2,7 @@ import React from 'react'
 import styled, {keyframes} from 'styled-components'
 import TypewriterComponent from 'typewriter-effect'
 import Avatar from '../../images/AvatarMaker(1).png'
+import { Link } from 'react-router-dom'
 
 const button = keyframes`
   from {
@@ -18,7 +19,6 @@ const Writee = styled.div`
 `
 
 const Writes = styled.div`
-   @media (min-width: 768px){
     position: fixed;
     background-color: blue;
 top: 50%;
@@ -35,7 +35,7 @@ font-size: 2rem;
 &>:first-child{
   display: ${props => props.click ? "none" : "flex"};
 }
-   }
+
 
    @media (max-width: 768px){
     position: absolute;
@@ -51,7 +51,7 @@ font-size: 2rem;
    }
 `
 
-const NavHome = styled.a`
+const NavHome = styled(Link)`
    color: var(--main-color);
    background: transparent;
    border: none;
@@ -85,7 +85,7 @@ const Writeup = ({ click}) => {
             }}
     />
    
-    <NavHome href="/Main">
+    <NavHome to="/Main">
     Click here to begin!
    </NavHome> 
    </Writes>

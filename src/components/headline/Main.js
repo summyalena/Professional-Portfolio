@@ -11,14 +11,10 @@ function Headline() {
   }
   
   return (
-    <>
       <div className={styles.container}>
         <SocialLinks/>
-        
         <Writeup click={click} clickOn={handleClick}/>
-      
     </div>
-    </>
   )
 }
 
