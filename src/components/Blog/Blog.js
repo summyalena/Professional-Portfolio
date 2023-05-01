@@ -35,10 +35,10 @@ const Button = styled.a`
     background-color: var(--main-color);
     padding: 0.4rem 1.2rem;
     text-decoration: none;
-    border-radius: 0.1rem;
     color: var(--background-color);
-    font-weight: bolder;
-    animation: ${zoom} 1.9s alternate infinite;
+    font-weight: bold;
+    text-align: center;
+    animation: ${zoom} 1.9s alternate;
 `
 
 
@@ -46,48 +46,75 @@ const Blog = () => {
   return (
     <FadeIn>
     <div className={styles.container} id='blog'>
-     <div className={styles.wrapper}>
      <Header>
            My Blog..
         </Header>
         <Swiper 
          modules={[Navigation, Pagination, Scrollbar]}
-         slidesPerView={2}
-         spaceBetween={30}
+         breakpoints={{
+          360: {
+            width: 360,
+            slidesPerView: 1
+          },
+          560: {
+            width: 560,
+            slidesPerView: 2
+          },
+          660: {
+            width: 660,
+            slidesPerView: 3
+          },
+          760: {
+            width: 760,
+            slidesPerView: 3
+          },
+          860: {
+            width: 860,
+            slidesPerView: 3
+          },
+          960: {
+            width: 960,
+            slidesPerView: 3
+          },
+          1110: {
+            width: 1110,
+            slidesPerView: 3
+          },
+          1260:{
+            width: 1260,
+            slidesPerView: 3,
+          }
+         }}
+         spaceBetween={10}
+        //  centeredSlides={true}
          navigation={{
-           nextEl: '.next',
+          nextEl: '.next',
            clickable: true,
          }}
          pagination={{ clickable: true}}
          grabCursor={true}
-         centeredSlides={true}
          loop={true}
         className={styles.Box}>
          {Blogs.map((blog)=>
          <SwiperSlide  key={blog.id}>
          <div className={styles.miniBox}>
-         <div className={styles.image}>
           <img src={blog.image} alt={blog.name}/>
-         </div>
-
-          <div className={styles.text}>
-            {blog.description}
-          </div>
+            <p>{blog.description}</p>
+         
 
           <Button href={blog.link}>
             Click to see <span className={styles.article}>Article!</span>
           </Button>
           </div>
       </SwiperSlide>
-       )} 
-       
+       )}
           <div className='next'>
             <FaArrowAltCircleRight/>
           </div>
           </Swiper> 
           
      </div>
-      </div>
+      
        </FadeIn>
   )
 }

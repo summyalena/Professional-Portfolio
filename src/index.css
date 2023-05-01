@@ -43,14 +43,7 @@ code {
     }
  }
 
-.next {
-    color: rgb(35, 126, 236);
-    font-size: 2.5rem;
-    cursor: pointer;
-     z-index: 50;
-     margin-right: 2.7rem;
-     animation: FadeIn 4s infinite;
-}
+
 
 .progress-bar {
   position: fixed;
@@ -66,7 +59,7 @@ code {
   opacity: 0;
   transform: translateY(30vh);
   visibility: hidden;
-  transition: opacity 1.6s ease-out transform 6s ease-out;
+  transition: opacity 1.2s ease-out transform 3s ease-out;
   will-change: opacity, visibility;
 }
 
@@ -74,7 +67,7 @@ code {
 .fade-in.is-visible {
   opacity: 1;
  transform: none;
- transition: opacity 3s ease-in;
+ transition: opacity 2s ease-in;
   visibility: visible;
   transform:rotateX(30);
 }
@@ -90,13 +83,6 @@ code {
    border-radius: 100%;
    border: 0.4rem var(--main-color) solid;
 }
-
-@media (max-width: 760px){
-    .next{
-      display: none;
-    }
-}
-
 
 @media (min-width: 260px) and (max-width: 440px){
   .next{

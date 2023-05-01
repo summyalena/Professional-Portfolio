@@ -1,0 +1,14 @@
+
+.next {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    padding: 1rem 1rem;
+    border-radius: 100%;
+    display: block;
+    z-index: 15;
+    border: var(--main-color) solid 0.1rem;
+    background-color: rgba(16, 24, 32, 0.486);
+    color: var(--main-color);
+   }
