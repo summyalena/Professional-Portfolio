@@ -98,15 +98,32 @@ align-items: center;
 `
 
 const Write = styled.div`
-   width: 50%;
+   width: 60%;
    height: 50%;
-   color: white;
    display: flex;
    flex-direction: column;
    color: var(--text-color);
+   padding: 0.5rem;
    justify-content: center;
-   align-items: left;
    font-family: 'Roboto';
+   line-height: 1.6;
+   h2{
+    font-family: 'Merriweather', serif;
+    letter-spacing: 4px;
+   }
+
+   h3{
+     font-weight: bolder;
+   }
+
+   p {
+    word-spacing: 2px;
+    text-align: left;
+    line-height: 2.3;
+    font-size: 1rem;
+    font-family: 'Playfair Display', sans-serif;
+   }
+  
 
    @media (max-width: 768px){
      height: 100%;
@@ -133,11 +150,11 @@ align-items: center;
 
 const rotate = keyframes`
      from {
-      transform: rotate(0deg);
+      transform: translateX(100%);
      }
 
      to {
-      transform: rotate(350deg);
+      transform: translateX(-10%);
      }
 `
 
@@ -192,12 +209,12 @@ const MainHeadline = () => {
       <Writeup>
         <Write>
         <FadeIn>
-          <h2>I am <span style={{color: "#E3735E"}}>Assumpta Okolike </span></h2>
+          <h2>I am <span style={{color: "#fee715"}}>Assumpta Okolike </span></h2>
         </FadeIn>
          <FadeIn>
           <h3>I turn Vision into Reality with Code And Design.
              </h3>
-             <span> I am also proficient in using the following frameworks: React, Nextjs Framework, Tailwind CSS and Javascript. I am committed to helping you build a simple and responsive web application for use!</span>
+             <span> <p> A professional <span style={{color: "#fee715"}}> Front-End </span>developer who is proficient in using modern web technologies to build scalable and excellent web projects for businesses and for personal users. You can see my works and go through my Resume.</p> </span>
          
          </FadeIn>
          <Button onClick={saveFile}>
