@@ -53,40 +53,32 @@ const Blog = () => {
          modules={[Navigation, Pagination, Scrollbar]}
          breakpoints={{
           360: {
-            width: 360,
             slidesPerView: 1
           },
           560: {
-            width: 560,
             slidesPerView: 2
           },
           660: {
-            width: 660,
             slidesPerView: 3
           },
           760: {
-            width: 760,
             slidesPerView: 3
           },
           860: {
-            width: 860,
             slidesPerView: 3
           },
           960: {
-            width: 960,
             slidesPerView: 3
           },
           1110: {
-            width: 1110,
             slidesPerView: 3
           },
           1260:{
-            width: 1260,
             slidesPerView: 3,
           }
          }}
          spaceBetween={10}
-        //  centeredSlides={true}
+         centeredSlides={true}
          navigation={{
           nextEl: '.next',
            clickable: true,
