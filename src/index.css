@@ -33,6 +33,15 @@ code {
   display: none;
 }
 
+.close{
+  width: 25px;
+  height: 25px;
+  padding: 0.2rem;
+  color: var(--main-color);
+  display:flex;
+  align-self: flex-end;
+}
+
  @keyframes FadeIn {
     0%{
       opacity: 0;
